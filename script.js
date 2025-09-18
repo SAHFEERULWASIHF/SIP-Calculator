@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initialize charts
     let leftChart, rightChart;
 
+    // Create a pie chart
     function createChart(ctx, title, labels, data, colors) {
         return new Chart(ctx, {
             type: "pie",
@@ -37,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Create default charts with initial data
+    // Create default charts
     const leftChartCanvas = document.getElementById("left-chart").getContext("2d");
     const rightChartCanvas = document.getElementById("right-chart").getContext("2d");
 
@@ -57,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ["#2196F3", "#FF5722"]
     );
 
-    // Update chart data
+    // Function to update chart data
     function updateChart(chart, data) {
         chart.data.datasets[0].data = data;
         chart.update();
