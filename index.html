@@ -12,7 +12,7 @@
         <h1>SIP Calculator with Interactive Visualization</h1>
     </header>
     <main>
-        <section>
+        <section id="input-section">
             <h2>Enter Your SIP Details</h2>
             <form id="sip-form">
                 <label for="monthly-investment">Monthly Investment (₹):</label>
@@ -30,7 +30,7 @@
                 <button type="submit" id="calculate-btn">Calculate and Visualize</button>
             </form>
         </section>
-        <div style="display: flex; justify-content: center; gap: 50px; margin-top: 30px;">
+        <div class="charts-container">
             <div>
                 <canvas id="left-chart" width="400" height="400"></canvas>
             </div>
